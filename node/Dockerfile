@@ -1,6 +1,8 @@
 FROM node:alpine
 
-WORKDIR ./app
+WORKDIR .
+
+COPY ./app .
 
 
 RUN npm install
