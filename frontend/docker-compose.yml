@@ -11,3 +11,11 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+  tests:
+    build:
+      context: . # react-app
+      dockerfile: Dockerfile.dev
+    stdin_open: true
+    volumes:
+      - /app/node_modules
+      - .:/app
