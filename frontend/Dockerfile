@@ -11,4 +11,5 @@ RUN npm run build
 # CMD ["npm", "run", "start"]
 
 FROM nginx
+EXPOSE 
 COPY --from=builder /app/build /usr/share/nginx/html
